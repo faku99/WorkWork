@@ -1,0 +1,9 @@
+Package: com.faku99.workwork
+Name: WorkWork!
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: faku99 <faku99dev@gmail.com>
+Author: faku99 <faku99dev@gmail.com>
+Section: Tweaks
