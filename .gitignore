@@ -1,7 +1,5 @@
 .DS_Store
-include
 
 .theos/
-include/
 obj/
 packages/
