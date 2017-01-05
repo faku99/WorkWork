@@ -22,7 +22,7 @@ Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq)
 For now, nothing. Feel free to contribute.
 
 # Installation
-You need **theos** to compile *WorkWork!*
+You need to [install theos](http://iphonedevwiki.net/index.php/Theos/Setup) to compile *WorkWork!*
 ```
     make package install
 ```

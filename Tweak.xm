@@ -2,7 +2,8 @@
  * WorkWork! - Stay productive.
  * Based on /u/ThatGuyEveryoneLikes reddit post (https://redd.it/5ln9iq)
  *
- * Created by: faku99
+ * File: Tweak.xm
+ * Created by: faku99 <faku99dev@gmail.com>
  * Created on: 03.01.2016
  */
 

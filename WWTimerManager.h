@@ -1,5 +1,9 @@
 /**
- * WWTimerManager - WorkWork timer manager.
+ * WWTimerManager class - WorkWork timer manager.
+ *
+ * File: WWTimerManager.h
+ * Created by: faku99 <faku99dev@gmail.com>
+ * Created on: 03.01.2016
  */
 
 @interface WWTimerManager : NSObject

@@ -1,3 +1,11 @@
+/**
+ * WWTimerManager class - WorkWork timer manager.
+ *
+ * File: WWTimerManager.mm
+ * Created by: faku99 <faku99dev@gmail.com>
+ * Created on: 03.01.2016
+ */
+
 #import <UIKit2/UIApplication.h>
 #import <UIKit2/UIScreen.h>
 
