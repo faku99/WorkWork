@@ -13,6 +13,8 @@
 
 @interface WWTimerManager ()
 
+// Here we need a boolean 'hasBeenFired' to know if the _timer has been fired (v0.0.2 fix).
+// Don't ask me why but when I called [_timer isValid], it made the app crash.
 @property (nonatomic, assign) BOOL hasBeenFired;
 @property (nonatomic, retain) NSTimer *timer;
 
