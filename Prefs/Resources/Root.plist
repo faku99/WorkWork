@@ -15,16 +15,89 @@
 			<string>PSEditTextCell</string>
             <key>keyboard</key>
             <string>numbers</string>
-            <key>isDecimalPad</key>
-            <true/>
 			<key>default</key>
-            <integer>300</integer>
+            <real>300.0</real>
 			<key>defaults</key>
-			<string>com.faku99.workworkprefs</string>
+			<string>com.faku99.workwork</string>
+            <key>PostNotification</key>
+            <string>com.faku99.workwork/settingschanged</string>
 			<key>key</key>
-			<string>delay</string>
+			<string>timeInterval</string>
 			<key>label</key>
-			<string>Delay</string>
+			<string>Time interval</string>
+		</dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>footerText</key>
+            <string>You must respring to apply changes.</string>
+            <key>footerAlignment</key>
+            <integer>1</integer>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>Respring</string>
+            <key>action</key>
+            <string>killBackboardd</string>
+            <key>isDestructive</key>
+            <true />
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>About</string>
+            <key>footerText</key>
+            <string>WorkWork! is free. If you like it, please consider a little donation! :)</string>
+        </dict>
+        <dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>email</string>
+			<key>label</key>
+			<string>Email support</string>
+            <key>hasIcon</key>
+            <true />
+            <key>icon</key>
+            <string>images/email.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>twitter</string>
+			<key>label</key>
+			<string>Follow me on Twitter</string>
+            <key>hasIcon</key>
+            <true />
+            <key>icon</key>
+            <string>images/twitter.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>paypal</string>
+			<key>label</key>
+			<string>Donate via Paypal</string>
+            <key>hasIcon</key>
+            <true />
+            <key>icon</key>
+            <string>images/paypal.png</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2017 - faku99 (@faku99dev)</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>title</key>

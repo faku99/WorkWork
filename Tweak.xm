@@ -9,11 +9,14 @@
 
 #import "WWTimerManager.h"
 
+// Static variables used to store observers.
 static id _activeObserver = nil;
 static id _backgroundObserver = nil;
 
 %ctor {
+    // 'UIApplicationDidBecomeActiveNotification' observer.
 	_activeObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *notification) {
+            // Sanity check to be sure the object is an (UIApplication *).
             if(![[notification.object class] isSubclassOfClass:[%c(UIApplication) class]])
                 return;
 
@@ -22,7 +25,9 @@ static id _backgroundObserver = nil;
 		}
 	];
 
+    // 'UIApplicationDidEnterBackgroundNotification' observer.
     _backgroundObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *notification) {
+            // Sanity check to be sure the object is an (UIApplication *).
             if(![[notification.object class] isSubclassOfClass:[%c(UIApplication) class]])
                 return;
 

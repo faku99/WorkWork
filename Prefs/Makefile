@@ -5,7 +5,7 @@ TARGET = iphone::9.0:9.0
 BUNDLE_NAME = WWPrefs
 WWPrefs_FILES = WWPRootListController.m
 WWPrefs_INSTALL_PATH = /Library/PreferenceBundles
-WWPrefs_FRAMEWORKS = UIKit
+WWPrefs_FRAMEWORKS = Social UIKit
 WWPrefs_PRIVATE_FRAMEWORKS = Preferences
 
 include $(THEOS_MAKE_PATH)/bundle.mk

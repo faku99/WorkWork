@@ -4,6 +4,12 @@ Stay productive
 Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq)
 
 # Changelog
+0.0.3
+* You can now customize the time interval from the settings pane.
+* Settings pane changes:
+  * Added a 'Respring' button in the settings pane.
+  * Added 'About' section in the settings pane.
+
 0.0.2
 * Fixed a bug that made any application hooked by *WorkWork!* crash when exiting if the alert has been fired.
 * Added a Preferences pane. Have to work on that.
@@ -14,7 +20,7 @@ Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq)
 # TODOs (non-exhaustive)
 * Settings
   * White list
-  * Configure time
+  * ~~Configure time~~
   * Configure message
 * More TBA
 
