@@ -1,14 +1,14 @@
 # WorkWork!
 Stay productive
 
-Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq)
+Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq).
 
 # Changelog
 0.0.3
 * You can now customize the time interval from the settings pane.
 * Settings pane changes:
-  * Added a 'Respring' button in the settings pane.
-  * Added 'About' section in the settings pane.
+  * Added a 'Respring' button.
+  * Added 'About' section.
 
 0.0.2
 * Fixed a bug that made any application hooked by *WorkWork!* crash when exiting if the alert has been fired.
@@ -19,7 +19,7 @@ Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq)
 
 # TODOs (non-exhaustive)
 * Settings
-  * White list
+  * White list (AppList integration)
   * ~~Configure time~~
   * Configure message
 * More TBA
@@ -34,4 +34,4 @@ You need to [install theos](http://iphonedevwiki.net/index.php/Theos/Setup) to c
 ```
 
 # License
-GNU GPL v3.0
+[GNU GPL v3.0](LICENSE.md)
