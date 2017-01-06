@@ -3,7 +3,7 @@ TARGET = iphone::9.0:9.0
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = WorkWork
-WorkWork_FILES = WWTimerManager.mm Tweak.xm
+WorkWork_FILES = WWPrefsManager.mm WWTimerManager.mm Tweak.xm
 WorkWork_FRAMEWORKS = UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk

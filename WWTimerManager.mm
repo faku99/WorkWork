@@ -9,17 +9,16 @@
 #import <UIKit2/UIApplication.h>
 #import <UIKit2/UIScreen.h>
 
+#import "WWPrefsManager.h"
 #import "WWTimerManager.h"
-
-#define SUITE   @"com.faku99.workwork"
 
 @interface WWTimerManager ()
 
 // Here we need a boolean 'hasBeenFired' to know if the _timer has been fired (v0.0.2 fix).
 // Don't ask me why but when I called [_timer isValid], it made the app crash.
 @property (nonatomic, retain) UIApplication *currentApp;
-@property (nonatomic, retain) NSUserDefaults *defaults;
 @property (nonatomic, assign) BOOL hasBeenFired;
+@property (nonatomic, retain) WWPrefsManager *manager;
 @property (nonatomic, retain) NSTimer *timer;
 
 @end
@@ -42,14 +41,9 @@ static WWTimerManager *sharedInstance = nil;
 
     if(self) {
         // We initialize properties.
-        _defaults = [[NSUserDefaults alloc] initWithSuiteName:SUITE];
         _hasBeenFired = false;
+        _manager = [WWPrefsManager sharedManager];
         _timer = nil;
-
-        // We have to do this in case user settings have not been set (i.e. first launch).
-        [_defaults registerDefaults:@{
-            @"timeInterval": @(kDefaultTimeInterval)
-        }];
     }
 
     return self;
@@ -97,7 +91,7 @@ static WWTimerManager *sharedInstance = nil;
     _currentApp = app;
     _hasBeenFired = false;
 
-    NSTimeInterval timeInterval = [[_defaults objectForKey:kTimeInterval] doubleValue];
+    NSTimeInterval timeInterval = [_manager timeInterval];
 
     // We initialize the timer.
     _timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(handleTimer:) userInfo:nil repeats:NO];
