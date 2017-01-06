@@ -11,13 +11,13 @@ Based on */u/ThatGuyEveryoneLikes* [reddit post](https://redd.it/5ln9iq).
   * Added 'About' section.
 
 0.0.2
-* Fixed a bug that made any application hooked by *WorkWork!* crash when exiting if the alert has been fired.
+* Fixed a bug that made any application hooked by *WorkWork!* crash when exiting if the alert had been fired.
 * Added a Preferences pane. Have to work on that.
 
 0.0.1
 * First beta release.
 
-# TODOs (non-exhaustive)
+# To-do list (non-exhaustive)
 * Settings
   * White list (AppList integration)
   * ~~Configure time~~

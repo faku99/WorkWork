@@ -1,6 +1,6 @@
-include $(THEOS)/makefiles/common.mk
-
 TARGET = iphone::9.0:9.0
+
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = WWPrefs
 WWPrefs_FILES = WWPRootListController.m
