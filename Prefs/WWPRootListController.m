@@ -1,6 +1,5 @@
 #import <Social/Social.h>
 
-#import "../WWTimerManager.h"
 #import "WWPRootListController.h"
 
 #define BUNDLE_PATH @"/Library/PreferenceBundles/WWPrefs.bundle"
